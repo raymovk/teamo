@@ -3,8 +3,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-
-    background-color: #FF6EB4;
+    background-color: #B19CD9; /* lavanda */
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .card {
@@ -12,19 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     height: 600px;
     width: 600px;
-
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    background-color: #F3E5F5; /* lavanda clara */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(106, 13, 173, 0.3);
+    padding: 20px;
+    text-align: center;
 }
 
 .card > .question p {
     font-size: 32px;
-    font-family: sans-serif;
     font-weight: 600;
+    color: #6A0DAD; /* roxo escuro */
 }
 
 .buttons {
@@ -32,26 +33,32 @@ body {
     align-items: center;
     justify-content: center;
     gap: 16px;
+    margin-top: 20px;
 }
 
 .btn-yes, .btn-no {
     height: 48px;
     width: 100px;
-
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .btn-yes {
-    background-color: #9AFF9A;
+    background-color: #C1FFC1; /* verde suave */
+    color: #2E8B57;
 }
 
 .btn-no {
-    background-color: #FF4040;
+    background-color: #D291BC; /* roxo rosado */
     color: #fff;
+}
+
+.btn-yes:hover, .btn-no:hover {
+    transform: scale(1.1);
 }
 
 .answer {
@@ -59,9 +66,8 @@ body {
 }
 
 .answer > p {
-    font-size: 48px;
-    font-family: sans-serif;
+    font-size: 36px;
     font-weight: bold;
-    color: #FF6EB4;
-    text-shadow: 1px 1px #000;
+    color: white;
+    text-shadow: 2px 2px 4px #6A0DAD;
 }
